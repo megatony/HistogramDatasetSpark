@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "mark" : "bar",
+  "encoding" : {
+    "x" : {
+      "field" : "activity_type",
+      "type" : "nominal"
+    },
+    "y" : {
+      "field" : "count",
+      "type" : "quantitative"
+    }
+  },
+  "description" : "Samples group by activities",
+  "data" : {
+    "values" : [
+      {
+        "activity_type" : "Walking&party",
+        "count" : 248186
+      },
+      {
+        "activity_type" : "In vehicle",
+        "count" : 124862
+      },
+      {
+        "activity_type" : "In computer",
+        "count" : 290111
+      },
+      {
+        "activity_type" : "Video games",
+        "count" : 434995
+      },
+      {
+        "activity_type" : "Eat",
+        "count" : 281928
+      },
+      {
+        "activity_type" : "Walk",
+        "count" : 213430
+      },
+      {
+        "activity_type" : "Phone was out of the pocket (forgot)",
+        "count" : 89160
+      },
+      {
+        "activity_type" : "At home",
+        "count" : 1046105
+      },
+      {
+        "activity_type" : "Train",
+        "count" : 174712
+      },
+      {
+        "activity_type" : "Meeting",
+        "count" : 75000
+      },
+      {
+        "activity_type" : "Cooking",
+        "count" : 47868
+      },
+      {
+        "activity_type" : "In bus",
+        "count" : 95995
+      },
+      {
+        "activity_type" : "Picnic ",
+        "count" : 52205
+      }
+    ]
+  }
+}
+   }
+   vg.embed("#vegas-b8047c2f-dafe-4a53-a2b8-95078fc661f4", embedSpec, function(error, result) {});
+ </script>
+ <div id='vegas-b8047c2f-dafe-4a53-a2b8-95078fc661f4'></div>
+    </body>
+</html>
